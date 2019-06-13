@@ -1,0 +1,9 @@
+{
+    "my_opcua_app" : {
+    	"config" : {
+    	    "pubTopic" : "timeseries_data",
+    	    "subTopic" : "idpd_timeseries",
+	    "multiplier" : 101
+    	}
+    }
+}

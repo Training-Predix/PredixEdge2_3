@@ -1,0 +1,10 @@
+version: "3.0"
+
+services:
+  edge-to-cloud-filter:
+    image: "my-opcua-edge-app:1.0.0"
+    networks:
+      - predix-edge-broker_net
+networks:
+  predix-edge-broker_net:
+    external: true
