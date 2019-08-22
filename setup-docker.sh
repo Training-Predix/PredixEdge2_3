@@ -38,6 +38,7 @@ systemctl enable docker
 systemctl start docker
 user_grp=$(groups $(logname) | cut -d : -f 1)
 chown root:${user_grp} /var/run/docker.sock
+docker swarm init   # should check for failure of this
 
 # Or to do the chown with the docker group, use the code below
 # groupadd docker
